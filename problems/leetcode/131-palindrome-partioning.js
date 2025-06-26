@@ -12,7 +12,11 @@
  * substring이 시작할 인덱스(i+1에서 자르니까 그 다음 substring은 i+1에서 시작해야함)
  * 7. substring palindrome인지 확인 후 재귀호출
  * 8. break 문: index가 문자열 길이만큼 왔을 때 더이상 자를 수 있는 곳이 없으므로 break
- * 시간복잡도:
+ *
+ * 시간복잡도
+ * 문자를 자를지 말지 선택 O(2^N)
+ * 팰린드롬인지 검사 O(N)
+ * O(N * 2^N)
  */
 
 const isPalindrome = s => {
